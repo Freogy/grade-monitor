@@ -1,0 +1,24 @@
+# .gitignore
+.env
+__pycache__/
+*.pyc
+# Data directory (track grades.db for persistence, ignore rest)
+data/*
+!data/grades.db
+!data/.gitkeep
+
+# Database files (except persisted grades.db)
+*.db
+!data/grades.db
+
+# Logs
+*.log
+captcha.png
+*_debug.html
+*.js
+!scraper.py
+!monitor.py
+!notifier.py
+!database.py
+!config.py
+.dockerignore
